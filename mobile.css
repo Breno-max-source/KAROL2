@@ -2,68 +2,39 @@
 @media (max-width: 768px) {
 
     main {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+        display: flex !important;
+        flex-direction: column !important;
     }
 
-    /* faz esquerda vir primeiro */
+    /* quebra layout de duas colunas */
+    .direita, .esquerda {
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* joga agendamento pro topo */
     .esquerda {
         order: -1;
     }
 
-    .direita, .esquerda {
-        width: 100%;
+    /* tira qualquer lado a lado */
+    section {
+        display: block !important;
     }
 
-    /* card de agendamento no topo */
-    .card {
-        margin-bottom: 20px;
+    /* imagens sempre cabendo */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
     }
 
-    /* textos mais confortáveis */
-    p {
-        font-size: 14px;
-        line-height: 1.5;
+    /* slider */
+    .slider {
+        width: 100% !important;
     }
 
-    h1, h2 {
-        text-align: center;
-    }
-
-    /* slider responsivo */
-    .card-slider {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .slider img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* imagens da clínica */
-    .pkl {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /* botões sociais empilhados */
-    .social-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .social-buttons a {
-        text-align: center;
-        width: 100%;
-    }
-
-    /* botão maior (mais clicável no mobile) */
+    /* botões */
     button {
         width: 100%;
-        padding: 12px;
-        font-size: 16px;
     }
 }
