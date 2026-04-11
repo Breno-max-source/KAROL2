@@ -192,3 +192,17 @@ section.esquerda{
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card-agendamento {
+    order: 1; /* vem primeiro */
+  }
+
+  .primeira {
+    order: 2;
+  }
+}
