@@ -1,13 +1,22 @@
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+@media (max-width: 768px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 
-  .card-agendamento {
-    order: 1; /* vem primeiro */
-  }
+    .card {
+        order: -1;
+        margin-bottom: 20px;
+    }
 
-  .primeira {
-    order: 2;
-  }
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .header img {
+        height: 250px;
+        object-fit: cover;
+    }    
 }
