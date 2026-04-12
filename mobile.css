@@ -4,10 +4,12 @@
     main {
         display: flex !important;
         flex-direction: column !important;
+        max-width: 100%;
+        padding: 15px;
     }
 
     /* quebra layout de duas colunas */
-    .direita, .esquerda {
+    .direita, .esquerda, p {
         width: 100% !important;
         display: block !important;
     }
@@ -24,7 +26,7 @@
 
     /* imagens sempre cabendo */
     img {
-        max-width: 100% !important;
+        max-width: 80% !important;
         height: auto !important;
     }
 
@@ -36,5 +38,12 @@
     /* botões */
     button {
         width: 100%;
+    }
+
+
+    .direita{
+        border: auto !important;
+        justify-content: center;
+        align-items: center;
     }
 }
