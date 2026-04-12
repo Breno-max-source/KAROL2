@@ -1,49 +1,59 @@
-/* MOBILE */
 @media (max-width: 768px) {
 
     main {
         display: flex !important;
         flex-direction: column !important;
-        max-width: 100%;
-        padding: 15px;
+        padding: 10px;
     }
 
-    /* quebra layout de duas colunas */
-    .direita, .esquerda, p {
+    /* quebra colunas */
+    .direita, .esquerda {
         width: 100% !important;
-        display: block !important;
     }
 
-    /* joga agendamento pro topo */
-    .esquerda {
-        order: -1;
+    /* ORDEM CORRETA */
+    .card {
+        order: 1;
     }
 
-    /* tira qualquer lado a lado */
-    section {
-        display: block !important;
+    .direita {
+        order: 2;
     }
 
-    /* imagens sempre cabendo */
+    .texto-esquerda,
+    .estagio {
+        order: 3;
+    }
+
+    /* faz TODOS virarem blocos ordenáveis */
+    main > section,
+    .esquerda > * {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* TEXTO BONITO NO MOBILE */
+    p {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0 5px; /* quase sem margem lateral */
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    /* imagens ocupando melhor a tela */
     img {
-        max-width: 80% !important;
-        height: auto !important;
-    }
-
-    /* slider */
-    .slider {
         width: 100% !important;
+        height: auto;
     }
 
-    /* botões */
+    /* botões grandes */
     button {
         width: 100%;
-    }
-
-
-    .direita{
-        border: auto !important;
-        justify-content: center;
-        align-items: center;
+        padding: 12px;
     }
 }
