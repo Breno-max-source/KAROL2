@@ -80,6 +80,10 @@
         position: relative;
     }
 
+    .card-slider button {
+    width: auto !important;
+    }
+
     .prev, .next {
         position: absolute;
         top: 50%;
